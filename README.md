@@ -5,7 +5,6 @@ YZTA Jam 2025 için geliştirilen bu web uygulaması, öğrencilerin tam sayıla
 ## Özellikler
 - İşlem sonucu kontrolü
 - AI destekli açıklamalar (yanlışsa)
-- Öğrenci bazlı skor takibi
 - Kullanıcı dostu web arayüzü
 
 ## Kurulum
