@@ -1,6 +1,6 @@
 import openai
 
-client = openai.OpenAI(api_key="<YOUR-OPENAI-API-KEY>")
+client = openai.OpenAI(api_key="<OPENAI-API-KEY-GIRINIZ>")
 
 def explain_math(expression):
     prompt = f"Şu işlemi açıkla: '{expression}'. Adım adım göster. Negatif sayıları da anlat."
