@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>🧮 Tam Sayı Kâşifi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">🧮 Tam Sayı Kâşifi</h1>
+        <div class="card p-4">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="expression" class="form-label">Bir işlem gir (örn: -5 + 3):</label>
+                    <input type="text" id="expression" name="expression" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Gönder</button>
+            </form>
+
+            {% if feedback %}
+                <hr>
+                <div class="alert alert-info mt-3" role="alert">
+                    <strong>{{ feedback }}</strong>
+                </div>
+                <div class="text-start">
+                    <h5>🧠 Açıklama:</h5>
+                    <p>{{ explanation }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
